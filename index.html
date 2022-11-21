@@ -5,9 +5,9 @@
 
 <SCRIPT LANGUAGE="javascript">
 function controle(form1) {
-var test = document.form1.input.value;
-var teste = document.form2.input.value;
-alert("Vous avez tapé : "+ test + teste);
+var test = document.form2.input.value;
+var teste = document.form3.input.value;
+alert("Score : "+ test + " " + teste);
 }
 
 
@@ -18,15 +18,32 @@ alert("Vous avez tapé : "+ test + teste);
 <body>
 <h1>Formulaire</h1>
 
+<!--
 <FORM NAME="form1">
 <INPUT TYPE="text" NAME="input" VALUE=""><BR>
 </FORM>
+-->
 
 <FORM NAME="form2">
-<label for="bienetre">Comment vous sentez-vous ?</label>
+<label for="q1">Comment vous sentez-vous ?</label>
   <select name="input" required>
-<option value="low">Non</option>
-<option value="med">blob</option>
+<option value="1">1 : Pas du tout</option>
+<option value="2">2 : Plutôt pas d'accord</option>
+<option value="3">3 : moyen</option>
+<option value="4">4 : Plutôt d'accord</option>
+<option value="5">5 : Complètement d'accord</option>
+<br>
+</FORM>
+
+<FORM NAME="form3">
+<label for="q2">Aimez-vous le chocolat ?</label>
+  <select name="input" required>
+<option value="1">1 : Pas du tout</option>
+<option value="2">2 : Plutôt pas d'accord</option>
+<option value="3">3 : moyen</option>
+<option value="4">4 : Plutôt d'accord</option>
+<option value="5">5 : Complètement d'accord</option>
+<br>
 
 <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
 </FORM>
