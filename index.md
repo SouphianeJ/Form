@@ -32,12 +32,13 @@
  </div>
 
 </form>
-
+</div>
+  
    <?php
             echo 'bienetre : '.$_POST["bienetre"].'<br>';
         ?>
   
-</div>
+
 
 
 
