@@ -4,10 +4,10 @@
         <meta charset="utf-8">
 
 <SCRIPT LANGUAGE="javascript">
-function controle(form1) {
-var test = document.form2.input.value;
-var teste = document.form3.input.value;
-alert("Score : "+ test + " " + teste);
+function controle() {
+var questone = document.getElementById("q1").value;
+var questtwo = document.getElementById("q2").value;
+alert("Score : "+ questone + " " + questtwo);
 }
 
 
@@ -24,8 +24,9 @@ alert("Score : "+ test + " " + teste);
 
 
 <FORM NAME="form2">
-<label for="q1">Comment vous sentez-vous ?</label>
-  <select required>
+
+<label>Comment vous sentez-vous ?</label>
+  <select name="quest1" id="q1">
 <Br>
 <option value="1">1 Pas du tout</option>
 <option value="2">2 Plutôt pas d'accord</option>
@@ -33,11 +34,12 @@ alert("Score : "+ test + " " + teste);
 <option value="4">4 Plutôt d'accord</option>
 <option value="5">5 Complètement d'accord</option>
 <br>
+</select>
 </FORM>
 
 <FORM NAME="form3">
-<label for="q2">Aimez-vous le chocolat ?</label>
-  <select required>
+<label>Aimez-vous le chocolat ?</label>
+  <select name="quest2" id="q2">
 <Br>
 <option value="1">1 Pas du tout</option>
 <option value="2">2 Plutôt pas d'accord</option>
@@ -45,8 +47,8 @@ alert("Score : "+ test + " " + teste);
 <option value="4">4 Plutôt d'accord</option>
 <option value="5">5 Complètement d'accord</option>
 <br>
-
-<INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
+</select>
+<INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle()">
 </FORM>
 
   
