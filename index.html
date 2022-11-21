@@ -6,9 +6,11 @@
 <SCRIPT LANGUAGE="javascript">
 function controle(form1) {
 var test = document.form1.input.value;
-
-alert("Vous avez tapé : " + test);
+var teste = document.form2.input.value;
+alert("Vous avez tapé : "+ test + teste);
 }
+
+
 </SCRIPT>
 
     </head>
@@ -18,11 +20,13 @@ alert("Vous avez tapé : " + test);
 
 <FORM NAME="form1">
 <INPUT TYPE="text" NAME="input" VALUE=""><BR>
+</FORM>
 
+<FORM NAME="form2">
 <label for="bienetre">Comment vous sentez-vous ?</label>
   <select name="input" required>
 <option value="low">Non</option>
-<option value="med">Non</option>
+<option value="med">blob</option>
 
 <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
 </FORM>
