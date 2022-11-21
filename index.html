@@ -4,7 +4,7 @@
         <meta charset="utf-8">
 
 <SCRIPT LANGUAGE="javascript">
-function controle(form2) {
+function controle(form1) {
 var test = document.form2.input.value;
 var teste = document.form3.input.value;
 alert("Score : "+ test + " " + teste);
@@ -18,15 +18,14 @@ alert("Score : "+ test + " " + teste);
 <body>
 <h1>Formulaire</h1>
 
-<!--
 <FORM NAME="form1">
 <INPUT TYPE="text" NAME="input" VALUE=""><BR>
 </FORM>
--->
+
 
 <FORM NAME="form2">
 <label for="q1">Comment vous sentez-vous ?</label>
-  <select name="input" required>
+  <select required>
 <Br>
 <option value="1">1 Pas du tout</option>
 <option value="2">2 Plutôt pas d'accord</option>
@@ -38,7 +37,7 @@ alert("Score : "+ test + " " + teste);
 
 <FORM NAME="form3">
 <label for="q2">Aimez-vous le chocolat ?</label>
-  <select name="input2" required>
+  <select required>
 <Br>
 <option value="1">1 Pas du tout</option>
 <option value="2">2 Plutôt pas d'accord</option>
@@ -47,7 +46,7 @@ alert("Score : "+ test + " " + teste);
 <option value="5">5 Complètement d'accord</option>
 <br>
 
-<INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form2)">
+<INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
 </FORM>
 
   
