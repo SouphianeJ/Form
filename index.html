@@ -5,10 +5,10 @@
 
 <SCRIPT LANGUAGE="javascript">
 function controle() {
-var questone = document.getElementById("q1").value;
-var questtwo = document.getElementById("q2").value;
-Var somme = parseInt(questone) + parseInt(questtwo);
-alert("Score : "+ questone + " " + questtwo + " somme : "  + parseInt(questone) + parseInt(questtwo));
+var questone = parseInt(document.getElementById("q1").value);
+var questtwo = parseInt(document.getElementById("q2").value);
+Var somme = questone + questtwo;
+alert("Score : "+ questone + " " + questtwo + " somme : "  + somme);
 }
 
 
