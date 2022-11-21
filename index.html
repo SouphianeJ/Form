@@ -3,14 +3,14 @@
         <title>Page de traitement</title>
         <meta charset="utf-8">
     </head>
-
+<body>
 <h1>Formulaire</h1>
 
 
 <div class="formulaireAlex">
 <p>Répondez aux questions</p>
 
-  <form>
+  <form method="post" action="">
     
 <div>
 <label for="nom">Votre nom</label>
@@ -40,8 +40,10 @@
 </form>
 </div>
   
-   <?php echo 'bienetre : '.$_POST["bienetre"].'<br>';?>
-  
+   <?
+php echo "bienetre : ".$_POST["bienetre"];
+?>
+</body>
 
 
 
