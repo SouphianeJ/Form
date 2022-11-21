@@ -41,6 +41,8 @@ window.addEventListener("load", function () {
 <div class="formulaireAlex">
 <p>Répondez aux questions</p>
 
+  <form>
+    
 <div>
 <label for="nom">Votre nom</label>
 <input type="text" id="nom" name="nom" placeholder="Martin" required>
@@ -62,8 +64,10 @@ window.addEventListener("load", function () {
 
 <div>
 
-<button type="button" onclick="sendData({test:'ok'})">Evoyer les données</button>
-</div>
+<input type="submit" value="Envoyer !">
+  
+ </div>
 
 </form>
+
 </div>
