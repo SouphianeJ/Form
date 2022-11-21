@@ -1,6 +1,6 @@
 # Formulaire
   
-<script src="index.md"></script>
+<script src="index.md"> </script>
 
 <div class="formulaireAlex">
 <p>Répondez aux questions</p>
