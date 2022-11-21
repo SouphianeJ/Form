@@ -1,6 +1,5 @@
 # Formulaire
-  
-<script src="index.md"> </script>
+
 
 <div class="formulaireAlex">
 <p>Répondez aux questions</p>
@@ -34,6 +33,10 @@
 
 </form>
 
+   <?php
+            echo 'bienetre : '.$_POST["bienetre"].'<br>';
+        ?>
+  
 </div>
 
 
